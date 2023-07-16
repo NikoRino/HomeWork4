@@ -4,17 +4,16 @@
     return Convert.ToInt32(Console.ReadLine());
 }
 
-void GetDegree(int num)
+void GetDegree(int number, int degree)
 {
-    int degree = 1;
-    for (i = 1; i <= degree; i++)
+    int result = 1;
+    for (int i = 1; i <= degree; i++)
     {
-        int num = num * i;
+        result = number * result;
     }
-    return degree;
+    Console.WriteLine($"Oтвет {result}");
 }
-int num = GetInput("число ");
-int degree = GetInput("степень ");
-int num = GetDegree(NumDegree);
 
-Console.WriteLine(num);
+int number = GetInput("Введите число ");
+int degree = GetInput("Введите степень ");
+GetDegree(number, degree);
